@@ -24,7 +24,7 @@ def caesarCipher(text: str, offset: int = 3, alphabet: str = small_alphabet) -> 
             cipher += char
     return cipher
 
-def substitutionCipher(text: str, key: str, baseAlphabet: str = small_alphabet) -> str:
+def keywordCipher(text: str, key: str, baseAlphabet: str = small_alphabet) -> str:
     """
     Encrypts a string using the substitution cipher.
 

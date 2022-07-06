@@ -15,9 +15,9 @@ class TestCaesar(ut.TestCase):
 
 class TestSubstitution(ut.TestCase):
     def test_defaultAlphabet(self):
-        self.assertEqual(substitutionCipher('abcdefghijklmnopqrstuvwxyz', 'cipher'), 'cipherstuvwxyzabdfgjklmnoq', 'should be the same')
-        self.assertEqual(substitutionCipher('abcdefghijklmnopqrstuvwxyz', 'clave'), 'clavefghijkmnopqrstuwxyzbd', 'should be the same')
-        self.assertEqual(substitutionCipher('abcdefghijklmnopqrstuvwxyz', 'hola'), 'holabcdefgijkmnpqrstuvwxyz', 'should be the same')
+        self.assertEqual(keywordCipher('abcdefghijklmnopqrstuvwxyz', 'cipher'), 'cipherstuvwxyzabdfgjklmnoq', 'should be the same')
+        self.assertEqual(keywordCipher('abcdefghijklmnopqrstuvwxyz', 'clave'), 'clavefghijkmnopqrstuwxyzbd', 'should be the same')
+        self.assertEqual(keywordCipher('abcdefghijklmnopqrstuvwxyz', 'hola'), 'holabcdefgijkmnpqrstuvwxyz', 'should be the same')
 
     # def test_phrases(self):
     #     self.assertEqual(substitutionCipher('Hello, World!', 'hola'), changeAlphabet('Hello World!'), 'should be the same')
